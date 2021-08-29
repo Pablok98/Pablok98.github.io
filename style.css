@@ -8,10 +8,10 @@ body, html {
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img.png");
 
     /* Set a specific height */
-    height: 50%;
+    height: 35%;
 
     filter: blur(6px);
     -webkit-filter: blur(6px);
@@ -29,9 +29,8 @@ body, html {
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 35%;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -150%);
     z-index: 2;
     width: 80%;
     padding: 20px;
@@ -43,6 +42,53 @@ body, html {
 
 .hero-text h3{
     font-size: 20px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("img.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-text h3{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+img.sticky {
+    position: sticky;
+    top: 0;
+    background-image: url("img.png");
+
+    /* Set a specific height */
+    height: 35%;
+    width: 100%;
+
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    position: -webkit-sticky;
 }
 
 .cuerpo {
